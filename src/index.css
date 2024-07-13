@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #e5e5e5;
+  -webkit-text-size-adjust: 100%;
+  min-height: 100vh;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.search {
+  font-size: 18px;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-weight: 400;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background-color: rgba(255,255,255,0.1);
+  color: #e5e5e5;
+  transition: all 0.3s ease;
+}
+
+.search:focus {
+  outline: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.15);
+}
+
+.exercises-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  gap: 30px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.exercise-card {
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(26, 26, 26, 0.8);
+  padding: 30px;
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.exercise-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.exercise-card h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.exercise-card a {
+  text-decoration: none;
+  color: #4da8da;
+  font-weight: bold;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.exercise-card a:hover {
+  color: #66c2ff;
+}
+
+.exercise-card a::before {
+  content: "\f0c1";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.exercise-card input[type="text"] {
+  width: 70%;
+  padding: 12px 15px;
+  border-radius: 50px;
+  border: none;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+  background-color: rgba(255,255,255,0.1);
+  color: #e5e5e5;
+  transition: all 0.3s ease;
+}
+
+.exercise-card input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,0.15);
+}
+
+.exercise-card p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+
+/* Pro malé mobilní telefony */
+@media (max-width: 320px) {
+  .search {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .exercise-card {
+    padding: 15px;
+  }
+
+  .exercise-card h2 {
+    font-size: 20px;
+  }
+
+  .exercise-card input[type="text"] {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .exercise-card p {
+    font-size: 14px;
+  }
+}
+
+/* Pro mobilní telefony */
+@media (min-width: 321px) and (max-width: 480px) {
+  .search {
+    font-size: 16px;
+  }
+
+  .exercise-card {
+    padding: 20px;
+  }
+
+  .exercise-card h2 {
+    font-size: 22px;
+  }
+
+  .exercise-card input[type="text"] {
+    width: 85%;
+  }
+
+  .exercise-card p {
+    font-size: 16px;
+  }
+}
+
+/* Pro tablety */
+@media (min-width: 481px) and (max-width: 768px) {
+  .search {
+    max-width: 80%;
+  }
+
+  .exercise-card {
+    width: 85%;
+  }
+}
+
+/* Pro menší desktopy a laptopy */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .search {
+    max-width: 70%;
+  }
+
+  .exercise-card {
+    width: 80%;
+  }
+}
+
+/* Pro větší desktopy */
+@media (min-width: 1025px) {
+  .search {
+    max-width: 50%;
+  }
+
+  .exercise-card {
+    width: 70%;
+    max-width: 800px;
+  }
+
+  .exercise-card h2 {
+    font-size: 32px;
+  }
+
+  .exercise-card input[type="text"] {
+    width: 60%;
+    font-size: 18px;
+  }
+
+  .exercise-card p {
+    font-size: 20px;
+  }
+}
+
+/* Pro velmi velké obrazovky */
+@media (min-width: 1441px) {
+  .search {
+    max-width: 40%;
+    font-size: 20px;
+  }
+
+  .exercise-card {
+    width: 60%;
+    max-width: 1000px;
+  }
+
+  .exercise-card h2 {
+    font-size: 36px;
+  }
+
+  .exercise-card input[type="text"] {
+    width: 50%;
+    font-size: 20px;
+  }
+
+  .exercise-card p {
+    font-size: 22px;
+  }
+}
