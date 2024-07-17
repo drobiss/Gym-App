@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import allExercises from "./data"
 import SearchBar from "./components/SearchBar"
 import ExerciseList from "./components/ExerciseList"
+import Footer from "./components/Footer"
 
 const App = () => {
   const [searchingText, setSearchingText] = useState("")
@@ -44,7 +45,7 @@ const App = () => {
 
 
   // APP
-  return (
+  return <>
     <div className="exercises-box">
       <SearchBar setSearchingText={setSearchingText} />
       <ExerciseList 
@@ -53,7 +54,8 @@ const App = () => {
         onWeightSubmit={handleWeightSubmit} 
       />
     </div>
-  )
+    <Footer />
+  </>
 }
 
 export default App
