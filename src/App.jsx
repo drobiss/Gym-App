@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 import allExercises from "./data"
-import SearchBar from "./components/SearchBar"
 import ExerciseList from "./components/ExerciseList"
 import Footer from "./components/Footer"
+import Navbar from "./components/Navbar"
 
 const App = () => {
   const [searchingText, setSearchingText] = useState("")
@@ -46,8 +46,9 @@ const App = () => {
 
   // APP
   return <>
+  <div className="container">
+    <Navbar  setSearchingText={setSearchingText}/>
     <div className="exercises-box">
-      <SearchBar setSearchingText={setSearchingText} />
       <ExerciseList 
         exercises={filteredExercises} 
         weights={weights} 
@@ -55,6 +56,7 @@ const App = () => {
       />
     </div>
     <Footer />
+  </div> 
   </>
 }
 

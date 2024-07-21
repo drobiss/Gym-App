@@ -1,13 +1,12 @@
+import React from 'react'
+
 const SearchBar = ({ setSearchingText }) => {
   return (
-    <div className="search-container">
-      <input
-        type="text"
-        className="search"
-        placeholder="Vyhledat cvik..."
-        onChange={(e) => setSearchingText(e.target.value)}
-      />
-    </div>
+    <input 
+      type="text" 
+      placeholder="Vyhledat cvik..."
+      onChange={(e) => setSearchingText(e.target.value)}
+    />
   )
 }
 
