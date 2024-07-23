@@ -1,6 +1,7 @@
 import ExerciseCard from "./ExerciseCard"
 
 const ExerciseList = ({ exercises, weights, onWeightSubmit }) => {
+  
   return (
     <div className="cards-container">
       {exercises.map((exercise) => (

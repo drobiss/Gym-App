@@ -5,6 +5,7 @@ import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 
 const App = () => {
+  
   const [searchingText, setSearchingText] = useState("")
   const [filteredExercises, setFilteredExercises] = useState([])
 

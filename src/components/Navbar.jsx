@@ -4,7 +4,7 @@ import SearchBar from './SearchBar'
 const Navbar = ({ setSearchingText }) => {
   return (
     <nav>
-      <h3>GymBro</h3>
+      <h3 className='logo'>GymBro</h3>
       <SearchBar setSearchingText={setSearchingText} />
     </nav>
   )
