@@ -100,13 +100,8 @@ const allExercises = [
     exercise: "Barbell Deep Squat",
     bodyPart: "Legs",
     exerciseLink: "https://www.jefit.com/exercises/467/barbell-deep-squat"
-  },
-  {
-    id: 17,
-    exercise: "Barbell Deep Squat",
-    bodyPart: "Legs",
-    exerciseLink: "https://www.jefit.com/exercises/467/barbell-deep-squat"
-  },
+  }
+
 ]
 
 export default allExercises
