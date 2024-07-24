@@ -62,7 +62,7 @@ nav input:focus {
 }
 
 .exercises-box {
-  height: calc(100vh - 120px);
+  height: calc(80vh - 120px);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   display: flex;
