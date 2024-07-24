@@ -53,6 +53,60 @@ const allExercises = [
     bodyPart: "Shoulders",
     exerciseLink: "https://www.jefit.com/exercises/48/dumbbell-seated-shoulder-press"
   },
+  {
+    id: 10,
+    exercise: "Barbell Bench Press",
+    bodyPart: "Chest",
+    exerciseLink: "https://www.jefit.com/exercises/2/barbell-bench-press"
+  },
+  {
+    id: 11,
+    exercise: "Barbell Incline Bench Press",
+    bodyPart: "Chest",
+    exerciseLink: "https://www.jefit.com/exercises/8/barbell-incline-bench-press"
+  },
+  {
+    id: 12,
+    exercise: "Dumbbell Bench Press",
+    bodyPart: "Chest",
+    exerciseLink: "https://www.jefit.com/exercises/26/dumbbell-bench-press"
+  },
+  {
+    id: 13,
+    exercise: "Barbell Landmine Double Arm Row",
+    bodyPart: "Back",
+    exerciseLink: "https://www.jefit.com/exercises/1351/barbell-landmine-double-arm-row"
+  },
+  {
+    id: 14,
+    exercise: "Cable Elevated Row",
+    bodyPart: "Back",
+    exerciseLink: "https://www.jefit.com/exercises/816/cable-elevated-row"
+  },
+  {
+    id: 15,
+    exercise: "Dumbbell One-Arm Row",
+    bodyPart: "Back",
+    exerciseLink: "https://www.jefit.com/exercises/90/dumbbell-one-arm-row"
+  },
+  {
+    id: 16,
+    exercise: "Cable Lat Pulldown",
+    bodyPart: "Back",
+    exerciseLink: "https://www.jefit.com/exercises/86/cable-lat-pulldown-wide-grip"
+  },
+  {
+    id: 17,
+    exercise: "Barbell Deep Squat",
+    bodyPart: "Legs",
+    exerciseLink: "https://www.jefit.com/exercises/467/barbell-deep-squat"
+  },
+  {
+    id: 17,
+    exercise: "Barbell Deep Squat",
+    bodyPart: "Legs",
+    exerciseLink: "https://www.jefit.com/exercises/467/barbell-deep-squat"
+  },
 ]
 
 export default allExercises
